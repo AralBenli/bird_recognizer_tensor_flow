@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FlowerRecognizer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Welcome</string>
+    <string name="me_gmail_com">me@gmail.com</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="sing_in">Sing In</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign Up</string>
+    <string name="login_to_flower_recognizer_to_use_application">Login to Flower Recognizer to use application</string>
+</resources>
