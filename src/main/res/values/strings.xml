@@ -1,12 +1,25 @@
 <resources>
-    <string name="app_name">FlowerRecognizer</string>
+    <string name="app_name">TensorFlowLearn</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="welcome">Welcome</string>
-    <string name="me_gmail_com">me@gmail.com</string>
+    <string name="example_gmail_com">example@gmail.com</string>
     <string name="password">Password</string>
-    <string name="forget_password">Forget Password</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="forget_password_title">Forget Password</string>
     <string name="sing_in">Sing In</string>
     <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign Up</string>
     <string name="login_to_flower_recognizer_to_use_application">Login to Flower Recognizer to use application</string>
+    <string name="full_name">Full name</string>
+    <string name="type_your_password">Type your password</string>
+    <string name="retype_your_password">Retype your password</string>
+    <string name="login_flower_recognizer_to_continue">Login Flower Recognizer to continue</string>
+    <string name="register">Register</string>
+    <string name="email_address">Email address</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_an_account_sign_in">Already have an account , Sign in</string>
+    <string name="sent">Sent</string>
+    <string name="type_your_mail_address">Type your mail address</string>
+    <string name="cancel">Cancel</string>
+    <string name="logout">logout</string>
 </resources>

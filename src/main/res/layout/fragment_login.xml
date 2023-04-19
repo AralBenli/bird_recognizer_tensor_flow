@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/air_blue">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -19,7 +19,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/materialTextView2login"
+                android:id="@+id/staticTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -27,58 +27,77 @@
                 android:text="Welcome"
                 android:textColor="@color/black"
                 android:textSize="24sp"
+                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <EditText
+            <TextView
+                android:id="@+id/staticText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/login_flower_recognizer_to_continue"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/staticTitle"
+                app:layout_constraintTop_toBottomOf="@+id/staticTitle" />
+
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/emailEditText"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="16dp"
-                android:drawableStart="@drawable/ic_mail_24"
-                android:drawablePadding="5dp"
-                android:hint="@string/me_gmail_com"
-                android:inputType="text"
-                android:padding="10dp"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black"
+                android:background="@drawable/login_et_stroke"
+                android:hint="Type your mail address"
+                android:textColorHint="@color/transparent_black"
                 app:boxStrokeColor="@color/black"
                 app:boxStrokeWidthFocused="2dp"
                 app:endIconMode="clear_text"
                 app:endIconTint="@color/black"
-                android:background="@drawable/login_et_stroke"
+                app:hintTextColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView"
-                app:startIconTint="@color/black" />
+                app:layout_constraintTop_toBottomOf="@+id/staticText"
+                app:startIconDrawable="@drawable/ic_mail_24"
+                app:startIconTint="@color/black">
 
-            <EditText
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/passwordEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="16dp"
-                android:drawableStart="@drawable/ic_lock_24"
-                android:drawablePadding="5dp"
-                android:hint="@string/password"
                 android:background="@drawable/login_et_stroke"
-                android:inputType="textWebPassword"
-                android:padding="10dp"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black"
+                android:hint="@string/type_your_password"
+                android:textColorHint="@color/transparent_black"
                 app:boxStrokeColor="@color/black"
                 app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/black"
                 app:layout_constraintEnd_toEndOf="@+id/emailEditText"
                 app:layout_constraintStart_toStartOf="@+id/emailEditText"
                 app:layout_constraintTop_toBottomOf="@+id/emailEditText"
+                app:startIconDrawable="@drawable/ic_lock_24"
                 app:startIconTint="@color/black">
 
-
-            </EditText>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textWebPassword"
+                    android:background="@null"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
 
 
             <Button
@@ -88,7 +107,7 @@
                 android:layout_marginTop="32dp"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:text="Sing In"
+                android:text="@string/sing_in"
                 android:textAllCaps="false"
                 android:textSize="14sp"
                 app:cornerRadius="15dp"
@@ -101,10 +120,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16sp"
-                android:text="Forgot Password?"
-                android:textColor="@color/black"
                 android:layout_marginEnd="16dp"
                 android:paddingBottom="10dp"
+                android:text="@string/forget_password"
+                android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/signinButton" />
@@ -121,17 +140,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/forgot_pass" />
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="Login Flower Recognizer to continue"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                app:layout_constraintStart_toStartOf="@+id/materialTextView2login"
-                app:layout_constraintTop_toBottomOf="@+id/materialTextView2login" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

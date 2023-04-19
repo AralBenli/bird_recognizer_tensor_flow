@@ -5,14 +5,15 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'dagger.hilt.android.plugin'
     id 'kotlin-parcelize'
+    id 'com.google.gms.google-services'
 }
 
 android {
-    namespace 'com.example.flowerrecognizer'
+    namespace 'com.example.tensorflowlearn'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.flowerrecognizer"
+        applicationId "com.example.tensorflowlearn"
         minSdk 24
         targetSdk 33
         versionCode 1
@@ -55,8 +56,15 @@ dependencies {
     // Swipe refresh layout
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01"
     implementation 'androidx.room:room-common:2.5.1'
-    implementation 'androidx.core:core-animation:1.0.0-beta01'
 
+    // firebase
+    implementation platform('com.google.firebase:firebase-bom:31.1.1')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-firestore-ktx'
+
+    
     // Navigation
     def nav_version = "2.5.3"
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
@@ -88,17 +96,8 @@ dependencies {
     implementation "androidx.room:room-paging:$roomVersion"
 
 
-    //Paging
-    def paging_version = "3.1.1"
-    implementation "androidx.paging:paging-common-ktx:$paging_version" // For Kotlin use paging-runtime-ktx
-    implementation "androidx.paging:paging-runtime-ktx:$paging_version" // For Kotlin use paging-runtime-ktx
-
-
-
     // window Manager
     implementation "androidx.window:window:1.1.0-alpha02"
-    // cache storage
-    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.3'
 
     implementation 'io.reactivex.rxjava3:rxjava:3.1.5'
     implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
