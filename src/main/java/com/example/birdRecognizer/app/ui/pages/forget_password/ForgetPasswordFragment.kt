@@ -1,12 +1,12 @@
-package com.example.tensorflowlearn.app.ui.pages.forget_password
+package com.example.birdRecognizer.app.ui.pages.forget_password
 
 
 import androidx.navigation.fragment.findNavController
-import com.example.tensorflowlearn.R
-import com.example.tensorflowlearn.databinding.FragmentForgetPasswordBinding
-import com.example.tensorflowlearn.app.ui.base.BaseFragment
-import com.example.tensorflowlearn.app.ui.pages.main.MainActivity
+import com.example.birdRecognizer.R
+import com.example.birdRecognizer.app.ui.base.BaseFragment
+import com.example.birdRecognizer.databinding.FragmentForgetPasswordBinding
 import com.google.firebase.auth.FirebaseAuth
+
 
 
 class ForgetPasswordFragment : BaseFragment<FragmentForgetPasswordBinding>() {
@@ -17,8 +17,6 @@ class ForgetPasswordFragment : BaseFragment<FragmentForgetPasswordBinding>() {
         FragmentForgetPasswordBinding.inflate(layoutInflater)
 
     override fun initViews() {
-        (requireActivity() as MainActivity).backNavigation(false)
-        (requireActivity() as MainActivity).actionBar(false)
         firebaseAuth = FirebaseAuth.getInstance()
         navigation()
     }

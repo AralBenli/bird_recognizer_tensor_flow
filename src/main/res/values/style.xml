@@ -2,7 +2,7 @@
 <resources>
     <style name="roundedCorners2x" parent="">
         <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">16dp</item>
+        <item name="cornerSize">36dp</item>
     </style>
 
     <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">

@@ -1,11 +1,10 @@
-package com.example.tensorflowlearn.app.ui.pages.login
+package com.example.birdRecognizer.app.ui.pages.login
 
 
 import androidx.navigation.fragment.findNavController
-import com.example.tensorflowlearn.R
-import com.example.tensorflowlearn.databinding.FragmentLoginBinding
-import com.example.tensorflowlearn.app.ui.base.BaseFragment
-import com.example.tensorflowlearn.app.ui.pages.main.MainActivity
+import com.example.birdRecognizer.R
+import com.example.birdRecognizer.app.ui.base.BaseFragment
+import com.example.birdRecognizer.databinding.FragmentLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 
 class LoginFragment : BaseFragment<FragmentLoginBinding>() {
@@ -15,8 +14,6 @@ class LoginFragment : BaseFragment<FragmentLoginBinding>() {
         FragmentLoginBinding.inflate(layoutInflater)
 
     override fun initViews() {
-        (requireActivity() as MainActivity).backNavigation(false)
-        (requireActivity() as MainActivity).actionBar(false)
         navigation()
         firebaseAuth = FirebaseAuth.getInstance()
 

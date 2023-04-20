@@ -1,13 +1,11 @@
-package com.example.tensorflowlearn.app.ui.pages.main
+package com.example.birdRecognizer.app.ui.pages.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.view.WindowManager
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.fragment.findNavController
-import com.example.tensorflowlearn.R
-import com.example.tensorflowlearn.databinding.ActivityMainBinding
+import com.example.birdRecognizer.R
+import com.example.birdRecognizer.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,38 +24,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        backNavigation()
         initViews()
 
 
     }
 
-    fun actionBar(visibility: Boolean) {
-        if (visibility) {
-            binding.customActionBar.visibility = View.VISIBLE
-        } else {
-            binding.customActionBar.visibility = View.GONE
-        }
-    }
-
-
     private fun initViews() {
         navHostFragment =
             supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
 
-    }
-
-
-    private fun backNavigation(){
-        binding.backIcon.setOnClickListener {
-            navHostFragment.findNavController().popBackStack()
-        }
-    }
-    fun backNavigation(visibility: Boolean) {
-        if (visibility) {
-            binding.backIcon.visibility = View.VISIBLE
-        } else {
-            binding.backIcon.visibility = View.INVISIBLE
-        }
     }
 }

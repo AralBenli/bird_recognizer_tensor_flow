@@ -1,12 +1,12 @@
-package com.example.tensorflowlearn.app.ui.pages.splash
+package com.example.birdRecognizer.app.ui.pages.splash
 
 import android.os.Handler
 import android.os.Looper
 import androidx.navigation.fragment.findNavController
-import com.example.tensorflowlearn.R
-import com.example.tensorflowlearn.databinding.FragmentSplashBinding
-import com.example.tensorflowlearn.app.ui.base.BaseFragment
-import com.example.tensorflowlearn.app.ui.pages.main.MainActivity
+import com.example.birdRecognizer.R
+import com.example.birdRecognizer.app.SharedPreferencesManager
+import com.example.birdRecognizer.databinding.FragmentSplashBinding
+import com.example.birdRecognizer.app.ui.base.BaseFragment
 
 
 class SplashFragment : BaseFragment<FragmentSplashBinding>() {
@@ -14,8 +14,6 @@ class SplashFragment : BaseFragment<FragmentSplashBinding>() {
         FragmentSplashBinding.inflate(layoutInflater)
 
     override fun initViews() {
-        (requireActivity() as MainActivity).backNavigation(false)
-        (requireActivity() as MainActivity).actionBar(false)
         splash()
     }
 
@@ -23,7 +21,11 @@ class SplashFragment : BaseFragment<FragmentSplashBinding>() {
     private fun splash() {
         Handler(Looper.getMainLooper()).postDelayed({
             view?.post {
+                if (SharedPreferencesManager.getBoolean(requireContext(), "skipped", false)) {
                     findNavController().navigate(R.id.splashToLogin)
+                } else {
+                    findNavController().navigate(R.id.splashToOnboarding)
+                }
             }
         }, 3000)
     }

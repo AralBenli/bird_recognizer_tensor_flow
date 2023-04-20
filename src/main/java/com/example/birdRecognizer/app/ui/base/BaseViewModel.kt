@@ -1,4 +1,4 @@
-package com.example.tensorflowlearn.app.ui.base
+package com.example.birdRecognizer.app.ui.base
 
 import androidx.lifecycle.ViewModel
 

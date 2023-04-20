@@ -9,11 +9,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.tensorflowlearn'
+    namespace 'com.example.birdRecognizer'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.tensorflowlearn"
+        applicationId "com.example.birdRecognizer"
         minSdk 24
         targetSdk 33
         versionCode 1
@@ -42,8 +42,11 @@ android {
         dataBinding = true
     }
     buildFeatures {
-        viewBinding = true
+        viewBinding  true
+        mlModelBinding  true
     }
+
+
 }
 
 
@@ -63,8 +66,9 @@ dependencies {
     implementation 'com.google.firebase:firebase-messaging-ktx'
     implementation 'com.google.firebase:firebase-auth'
     implementation 'com.google.firebase:firebase-firestore-ktx'
+    implementation 'org.tensorflow:tensorflow-lite-gpu:2.3.0'
 
-    
+
     // Navigation
     def nav_version = "2.5.3"
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
@@ -102,6 +106,11 @@ dependencies {
     implementation 'io.reactivex.rxjava3:rxjava:3.1.5'
     implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
     implementation 'io.reactivex.rxjava3:rxkotlin:3.0.1'
+
+    //tensorflow dependency
+    implementation 'org.tensorflow:tensorflow-lite-support:0.1.0'
+    implementation 'org.tensorflow:tensorflow-lite-metadata:0.1.0'
+
 
 }
 

@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:857400945575:android:e2cd53dfd14c563e41e482",
+        "mobilesdk_app_id": "1:857400945575:android:ff7e16a3533309a041e482",
         "android_client_info": {
-          "package_name": "com.example.tensorflowlearn"
+          "package_name": "com.example.birdRecognizer"
         }
       },
       "oauth_client": [

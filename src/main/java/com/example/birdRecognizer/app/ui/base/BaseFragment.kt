@@ -1,4 +1,4 @@
-package com.example.tensorflowlearn.app.ui.base
+package com.example.birdRecognizer.app.ui.base
 
 import android.os.Bundle
 import android.view.Gravity
@@ -10,7 +10,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
-import com.example.tensorflowlearn.R
+import com.example.birdRecognizer.R
 
 /**
  * Created by AralBenli on 18.04.2023.

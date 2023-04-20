@@ -36,7 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="@string/login_flower_recognizer_to_continue"
+                android:text="@string/login_birds_recognizer_to_continue"
                 android:textColor="@color/black"
                 android:textSize="14sp"
                 app:layout_constraintStart_toStartOf="@+id/staticTitle"
@@ -67,6 +67,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@null"
+                    android:text="niyirit422@fitzola.com"
                     android:inputType="textEmailAddress"
                     android:textColor="@color/black" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -96,6 +97,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="textWebPassword"
                     android:background="@null"
+                    android:text="asd123"
                     android:textColor="@color/black" />
             </com.google.android.material.textfield.TextInputLayout>
 

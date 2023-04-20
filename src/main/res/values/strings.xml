@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">TensorFlowLearn</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_name">BirdRecognizer</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="welcome">Welcome</string>
     <string name="example_gmail_com">example@gmail.com</string>
@@ -13,7 +12,7 @@
     <string name="full_name">Full name</string>
     <string name="type_your_password">Type your password</string>
     <string name="retype_your_password">Retype your password</string>
-    <string name="login_flower_recognizer_to_continue">Login Flower Recognizer to continue</string>
+    <string name="login_birds_recognizer_to_continue">Login Birds Recognizer to continue</string>
     <string name="register">Register</string>
     <string name="email_address">Email address</string>
     <string name="sign_up">Sign Up</string>
@@ -22,4 +21,12 @@
     <string name="type_your_mail_address">Type your mail address</string>
     <string name="cancel">Cancel</string>
     <string name="logout">logout</string>
+    <string name="incoming_bird">Incoming Bird</string>
+    <string name="click_on_the_result_text_to_search_on_google">click on the bird name to search on Google</string>
+    <string name="output">Output :</string>
+    <string name="load_image">LOAD IMAGE</string>
+    <string name="capture">CAPTURE</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="done">Done</string>
 </resources>
