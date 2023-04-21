@@ -14,6 +14,13 @@ Bird Recognizer is a application which you can take a photo of bird and you can 
 - Shared Preferences
 
 
+# Model
+
+````
+https://tfhub.dev/google/lite-model/aiy/vision/classifier/birds_V1/3
+````
+
+
 # Video
 
 https://user-images.githubusercontent.com/105877592/233661875-a6e61423-e767-4c52-a302-a433cc8e1d3c.mp4
